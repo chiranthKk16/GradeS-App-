@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GradeS</string>
+    <string name="enter_subject">Enter your <b>subjects</b> along with corresponding credits.\nIf less then leave remaining text boxes blank</string>
+    <string name="enter_labs">Enter your <b>labs</b> along with corresponding credits.\nIf less then leave remaining text boxes blank</string>
+    <string name="labs"><b>Labs</b></string>
+    <string name="subject">Subjects</string>
+    <string name="credits"><b>Credits</b></string>
+    <string name="gm"><b>Good Morning</b></string>
+    <string name="ga"><b>Good Afternoon</b></string>
+    <string name="ge"><b>Good Evening</b></string>
+    <string name="marks">Marks</string>
+    <string name="hit_check">Don\'t forget to hit <b>done</b> after each entry\nto update your marks</string>
+</resources>

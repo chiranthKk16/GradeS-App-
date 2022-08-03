@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="always"
+    android:id="@+id/main_activity_layout">
+
+<RelativeLayout
+    android:id="@+id/main_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <View
+            android:id="@+id/gretting_img_layout"
+            android:layout_width="200dp"
+            android:layout_marginTop="140dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:layout_height="200dp"/>
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/baloo"
+            android:paddingTop="60dp"
+            android:text="@string/gm"
+            android:textSize="35sp" />
+
+        <RelativeLayout
+            android:id="@+id/test1_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@id/gretting_img_layout"
+            android:layout_marginBottom="40dp"
+            android:paddingBottom="30dp"
+            android:layout_marginEnd="15dp"
+            android:elevation="20dp">
+
+            <TextView
+                android:id="@+id/test1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/baloo"
+                android:layout_marginStart="25dp"
+                android:text="Test 1"
+                android:textSize="30sp" />
+
+
+            <LinearLayout
+                android:id="@+id/test1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/test1"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/sub_marks_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/subjects_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:paddingStart="30dp"
+                        android:text="@string/subject"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/marks_show_test1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:gravity="center_horizontal"
+                        android:text="@string/marks"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/test1_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:focusableInTouchMode="true"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/test2_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="40dp"
+            android:paddingBottom="30dp"
+            android:layout_below="@id/test1_relative_layout">
+
+            <TextView
+                android:id="@+id/test2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="@font/baloo"
+                android:layout_marginTop="20dp"
+                android:text="Test 2"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/test2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/test2"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/sub_marks_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/subjects_show_test2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:paddingStart="30dp"
+                        android:text="@string/subject"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/marks_show_test2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:gravity="center_horizontal"
+                        android:text="@string/marks"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/test2_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:focusableInTouchMode="true"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/assignment_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="40dp"
+            android:paddingBottom="30dp"
+            android:layout_below="@id/test2_relative_layout">
+
+            <TextView
+                android:id="@+id/assignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="@font/baloo"
+                android:layout_marginTop="20dp"
+                android:text="Assignment"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/assignment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/assignment"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ass_marks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/subjects_show_ass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:paddingStart="30dp"
+                        android:text="@string/subject"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/marks_show_ass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:gravity="center_horizontal"
+                        android:text="@string/marks"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/assgn_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:focusableInTouchMode="true"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lab_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="40dp"
+            android:paddingBottom="30dp"
+            android:layout_below="@id/assignment_relative_layout">
+
+            <TextView
+                android:id="@+id/lab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/baloo"
+                android:text="Lab"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/lab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lab"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lab_marks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/subjects_show_lab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:paddingStart="30dp"
+                        android:text="@string/subject"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/marks_show_lab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:gravity="center_horizontal"
+                        android:text="@string/marks"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lab_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:focusableInTouchMode="true"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/compute_cie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lab_relative_layout"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/top_round"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_calculate" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Compute | Update"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="CIE and required marks for SEE"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/cie_view_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/compute_cie"
+            android:layout_marginBottom="40dp"
+            android:visibility="visible">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cie_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/see_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="30dp"
+            android:layout_below="@id/cie_view_main">
+
+                <TextView
+                    android:id="@+id/see"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/baloo"
+                    android:layout_marginTop="20dp"
+                    android:text="SEE"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:id="@+id/see_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/see"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/see_marks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/subjects_show_see"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:paddingStart="30dp"
+                            android:text="@string/subject"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/marks_show_see"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:gravity="center_horizontal"
+                            android:text="@string/marks"
+                            android:textSize="17sp" />
+
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/see_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:nestedScrollingEnabled="false" />
+                </LinearLayout>
+        </RelativeLayout>
+
+            <TextView
+                android:id="@+id/compute_gpa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/see_relative_layout"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/round_corner"
+                android:drawableStart="@drawable/ic_gpa"
+                android:elevation="20dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:shadowColor="@color/black"
+                android:text="Compute SGPA"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/gpa_show_view"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_below="@id/compute_gpa"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/current_gpa_is"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/sgpa_photo" />
+
+        <TextView
+            android:id="@+id/current_gpa_is"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="Current SGPA"
+            android:layout_marginBottom="0dp"
+            android:textColor="#4CAF50"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/gpa_show_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/current_gpa_is"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/baloo"
+            android:text="9.72"
+            android:textColor="#4CAF50"
+            android:textSize="60sp" />
+
+    </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gpa_show_view"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/next_sem_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/next_sem"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/baloo"
+                        android:text="next sem >"
+                        android:gravity="center"
+                        android:lineSpacingExtra="0dp"
+                        android:layout_marginEnd="20dp"
+                        android:includeFontPadding="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/cie_show_layout">
+
+    <LinearLayout
+        android:id="@+id/cie_marks"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/cie_like_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginEnd="5dp"
+        android:text="CIE:"/>
+
+    <TextView
+        android:id="@+id/cie_marks_textView"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="47"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_below="@id/cie_marks"
+        android:layout_marginTop="10dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/required_marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cie_marks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/cie_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/required_marks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/round_corner"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="Subject"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/grade_show_indi"
+        android:layout_below="@id/cie_subject"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

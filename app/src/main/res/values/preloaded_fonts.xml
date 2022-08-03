@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/baloo</item>
+        <item>@font/beth_ellen</item>
+        <item>@font/cherry_cream_soda</item>
+        <item>@font/comfortaa</item>
+        <item>@font/comfortaa_bold</item>
+        <item>@font/homemade_apple</item>
+        <item>@font/pacifico</item>
+        <item>@font/yellowtail</item>
+    </array>
+</resources>
